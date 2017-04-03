@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="16dp"
+    tools:context="com.boomapp.catatanbukuapp.TambahCatatan">
+
+    <ImageView
+        android:id="@+id/icon_book"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/icon_book"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kode Buku"
+        android:id="@+id/tvKodeBuku"
+        android:layout_below="@id/icon_book"
+
+         />
+    <EditText
+        android:id="@+id/etKodeBuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvKodeBuku"/>
+    <TextView
+        android:id="@+id/tvJudulBuku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etKodeBuku"
+        android:text="Judul Buku"/>
+    <EditText
+        android:id="@+id/etJudulBuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvJudulBuku"/>
+    <TextView
+        android:id="@+id/tvPengarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etJudulBuku"
+        android:text="Pengarang Buku"/>
+    <EditText
+        android:id="@+id/etPengarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPengarang"/>
+    <TextView
+        android:id="@+id/tvPenerbit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPengarang"
+        android:text="Penerbit Buku"/>
+    <EditText
+        android:id="@+id/etPenerbit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPenerbit"/>
+    <TextView
+        android:id="@+id/tvTahun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPenerbit"
+        android:text="Tahun Terbit"/>
+    <EditText
+        android:id="@+id/etTahun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTahun"/>
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/colorPrimary"
+        android:text="Simpan"/>
+    <Button
+        android:id="@+id/btnkembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="Kembali"/>
+</RelativeLayout>
